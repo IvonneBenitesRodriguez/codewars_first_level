@@ -1,0 +1,3 @@
+### Strict Equality Operator ===
+This operator checks if two operands are equal, returning a boolean result. This operator always considers operands of different types to be different.<br/>
+Also, in the codewars exercise I used strict equality operators to write a condition to confirm that each of the sheeps present in the array were present so i used this operator === but this operator also gave me the benefit to cancel all the other posibilities like null or undefined values.
