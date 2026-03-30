@@ -6,7 +6,22 @@
 //You need to return the other complementary side.
 // DNA strand is never empty or there is no DNA at all.
 
-//Solution:
+//Proceso Mental PSEUDOCODE:
+ //Entonces el string es dna, yo crearia una variable llamada valuesDetected 
+ // y la inicializaria a 0.
+ // Luego usaria el metodo split a dna para convertirla en array. 
+//Luego usaria un for statement para iterar por cada elemento del array convertido
+//  y luego dentro del for statement colocaria mi condicional diciendo 
+// que si es los caracteres son iguales a "A" return "T" y si son "T" devolver "A", 
+// pero aca tendria que agregar los valores obtenidos a valuesDetected 
+// quiza usando el metodo push y lo mismo crearia otra condicion
+// con "C" y "G" igual que "A" y "T" y tambien agregaria el resultado a la variable valuesDetected
+// usando el metodo push. 
+// Cerrando el for statement recien colocare el return keyword con la variable valuesDetected;  
+// Pero evidentemente como parte del defensive programming agregaria una linea al inicio 
+// de un if conditional que mencione si DNA !== [ ]{ return 0 }
+
+
 function dnaStrand(dna){
     if(!dna || dna.length === 0){
         return "";
